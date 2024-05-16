@@ -40,7 +40,7 @@ def parse_args():
     parser.add_argument('--seed', type=int, default=0, help='The random seed.')
     parser.add_argument('--rand_dataset', type=bool, default=True, help='The random seed.')
 
-    parser.add_argument('--model', type=str, default='fpl',  # fpl, fedavg, fedprox , moon, fccl, fcclplus, feddf
+    parser.add_argument('--model', type=str, default='fpl',  # fpl, fedavg, fedprox , moon
                         help='Model name.', choices=get_all_models())
     parser.add_argument('--structure', type=str, default='homogeneity')
     parser.add_argument('--dataset', type=str, default='fl_digits',   # fl_digits, fl_officecaltech
