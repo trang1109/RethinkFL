@@ -8,7 +8,7 @@ def get_device(device_id) -> torch.device:
 
 
 def data_path() -> str:
-    return '/content/drive/MyDrive/Rethinking_Federated_Learning_With_Domain_Shift_A_Prototype_View/pls/'
+    return '/content/drive/MyDrive/RethinkFL/pls/'
 
 
 def base_path() -> str:
