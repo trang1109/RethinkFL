@@ -47,12 +47,6 @@ best_args = {
             'local_batch_size': 64,
             'Note': '+ MSE'
         }
-    },
-    
-
-    },
-    
-
-
+    }
     
 }
