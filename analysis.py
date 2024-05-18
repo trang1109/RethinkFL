@@ -5,7 +5,7 @@ from argparse import ArgumentParser
 
 path = './data/'
 scenarios_list = ['fl_digits', 'fl_officecaltech']
-structures_list = ['homogeneity', 'heterogeneity']  # Adding heterogeneity for example
+structures_list = ['homogeneity']  # Adding heterogeneity for example
 pri_aug = 'weak'  # weak, strong
 column_mean_acc_list = ['method', 'paragroup'] + ['epoch' + str(i) for i in range(40)] + ['MEAN']
 domain_list = ['intra', 'inter']
