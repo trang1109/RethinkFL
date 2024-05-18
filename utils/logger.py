@@ -21,7 +21,12 @@ class CsvWriter:
         args = self.args
         data_path = base_path() + args.dataset
         create_if_not_exists(data_path)
+       if self.private_dataset.SETTING=='label_skew':
+          path = path+'/'+str(args.beta)
+          create_if_not_exists(path)
 
+        structure_path = path+'/'+args.structure
+        create_if_not_exists(structure_path)
         model_path = data_path+'/'+args.model
         create_if_not_exists(model_path)
         return model_path
