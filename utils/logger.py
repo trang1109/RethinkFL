@@ -3,7 +3,8 @@ import os
 import csv
 from utils.conf import base_path
 from utils.util import create_if_not_exists
-useless_args = ['pub_aug','public_len','public_dataset','structure', 'model', 'csv_log', 'device_id', 'seed',
+# 'pub_aug','public_len','public_dataset',
+useless_args = ['structure', 'model', 'csv_log', 'device_id', 'seed',
                 'tensorboard','conf_jobnum','conf_timestamp','conf_host']
 import pickle
 
