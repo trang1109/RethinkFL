@@ -51,7 +51,8 @@ def main():
             mean_acc_dict = load_mean_acc_list(scenario_path, domain)
             mean_df = pd.DataFrame.from_dict(mean_acc_dict, orient='index', columns=column_mean_acc_list)
             print(mean_df)
-            output_file_path = os.path.join(scenario_path, domain + '_output.xlsx')
+            output_file_name = f"{scenario}_{domain}_output.xlsx"
+            output_file_path = os.path.join(scenario_path, output_file_name)
             mean_df.to_excel(output_file_path, na_rep='True')
 
 if __name__ == '__main__':
