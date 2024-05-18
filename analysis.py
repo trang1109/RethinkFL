@@ -7,7 +7,7 @@ path = './data/'
 scenarios_list = ['fl_digits', 'fl_officecaltech']
 pri_aug = 'weak'  # weak, strong
 column_mean_acc_list = ['method', 'paragroup'] + ['epoch' + str(i) for i in range(40)] + ['MEAN', 'Last_Mean']
-domain_list = ['intra', 'inter']
+domain_list = ['inter']
 
 def load_mean_acc_list(scenario_path, domain):
     acc_dict = {}
