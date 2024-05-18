@@ -33,8 +33,8 @@ def parse_args():
     parser = ArgumentParser(description='You Only Need Me', allow_abbrev=False)
     parser.add_argument('--device_id', type=int, default=0, help='The Device Id for Experiment')
 
-    parser.add_argument('--communication_epoch', type=int, default=1, help='The Communication Epoch in Federated Learning')
-    parser.add_argument('--local_epoch', type=int, default=1, help='The Local Epoch for each Participant')
+    parser.add_argument('--communication_epoch', type=int, default=100, help='The Communication Epoch in Federated Learning')
+    parser.add_argument('--local_epoch', type=int, default=10, help='The Local Epoch for each Participant')
     parser.add_argument('--parti_num', type=int, default=10, help='The Number for Participants')
 
     parser.add_argument('--seed', type=int, default=0, help='The random seed.')
