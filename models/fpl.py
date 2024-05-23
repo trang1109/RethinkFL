@@ -5,8 +5,6 @@ import copy
 from utils.args import *
 from models.utils.federated_model import FederatedModel
 import torch
-import sys
-sys.path.append('/content/drive/MyDrive/RethinkFL/')
 from utils.finch import FINCH
 import numpy as np
 
